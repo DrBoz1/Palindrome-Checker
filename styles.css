@@ -66,3 +66,20 @@ label{
 .palindrome-input:focus{
     border-bottom: 5px solid green;
 }
+
+.palindrome-definition-div{
+    width: min(100vw,450px);
+    font-size: 1.3rem;
+    min-height: 130px;
+    background-color: #166d37;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.palindrome-definition{
+    vertical-align: middle;
+    text-align: center;
+}
