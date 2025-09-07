@@ -3,21 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link href="./output.css" rel="stylesheet">
     <title>Palindrome Checker</title>
 </head>
-<body>
-    <main class="container">
-        <h1 class="title">Palindrome Checker</h1>
-        <div class="palindrome-div">
-            <label for="text-input">Enter in a text to check for a palindrome:</label>
-            <input class="palindrome-input" id="text-input" value type="text"/>
-            <button class="palindrome-btn" id="check-btn">Check</button>
-            <div class="results-div hidden" id="result"></div>
+<body class="font-primary bg-[#6580CF] text-white">
+    <main class="w-full min-h-screen relative flex items-center justify-center flex-col ">
+        <h1 class="text-center py-[10px] px-0 text-[2.5rem] mb-[20px] ">Is it a Palindrome?</h1>
+        <div class="w-[min(100vw,450px)] min-h-[100px] rounded-[20px] flex items-center justify-center flex-wrap p-[20px] 
+       my-[10px] mx-0 bg-black shadow-lg shadow-[#0861c7] ">
+            <label class="text-[#09B5E0] mb-[20px]" for="text-input">Enter in a text to check for a palindrome:</label>
+            <input class="h-[30px] w-[250px] text-center 
+            text-[1.2rem] m-[10px] border-b-2 border-solid border-green-500 focus:border-b-5" id="text-input" value type="text"/>
+            <button class="w-[90px] border-none p-[10px] 
+            rounded-[15px] bg-[#FFDEDE] text-black cursor-pointer " id="check-btn">Check</button>
+            <div class="overflow-y-auto wrap-break-word min-h-[50px]" id="result"></div>
 
         </div>
-        <div class="palindrome-definition-div">
-            <p class="palindrome-definition">💡 A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and 
+        <div class="w-[min(100vw,450px)] text-[1.2rem] min-h-[130px] bg-[#166d37] mt-[20px] p-[20px] rounded-[20px] flex items-center justify-center">
+            <p class="align-middle text-center">💡 A <dfn>palindrome</dfn> is a word or sentence that's spelled the same way both forward and 
                 backward, ignoring punctuation, case, and spacing.
             </p>
         </div>
